@@ -1,0 +1,12 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+@layer base {
+  body { @apply bg-[#F2F4F7] text-[#0E1726] antialiased; font-family: var(--font-body), system-ui, sans-serif; }
+  h1, h2, h3, .font-display { font-family: var(--font-display), system-ui, sans-serif; }
+  input, select, textarea { @apply mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm focus:border-[#2B50F5] focus:outline-none focus:ring-2 focus:ring-[#2B50F5]/20; }
+  input[type=checkbox] { @apply w-auto; }
+}
+@layer components {
+  .btn { @apply inline-flex items-center justify-center rounded-lg bg-[#2B50F5] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#1F3FD1] disabled:opacity-50; }
+  .btn-ghost { @apply inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-medium hover:border-slate-500; }
+  .panel { @apply rounded-2xl border border-slate-200 bg-white p-6; }
+}
